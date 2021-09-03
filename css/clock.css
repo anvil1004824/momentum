@@ -1,0 +1,17 @@
+#clock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#clock h2 {
+  font-size: 100px;
+  color: white;
+  margin-bottom: 30px;
+  font-weight: 550;
+}
+#clock h3 {
+  font-size: 25px;
+  color: white;
+  margin-bottom: 10px;
+}

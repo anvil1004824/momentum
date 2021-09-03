@@ -7,11 +7,13 @@
     <title>Momentum App</title>
   </head>
   <body>
+    <div id="clock">
+      <h3>0000-00-00, XXX</h3>
+      <h2>00:00:00</h2>
+    </div>
     <form class="hidden" id="login-form">
       <input type="text" placeholder="What is your name?" />
-      <button>Log In</button>
     </form>
-    <h2 id="clock">00:00:00</h2>
     <h1 id="greeting" class="hidden"></h1>
     <form id="todo-form">
       <input type="text" placeholder="Write a To Do and Press Enter" required />
@@ -22,14 +24,22 @@
       <span></span>
     </div>
     <div id="weather">
+      <img />
       <span></span>
       <span></span>
+      <div class><i class="fas fa-chevron-down"></i></div>
+      <div class="loading hidden"><i class="fas fa-redo"></i></div>
     </div>
+    <div id="too-small">Your screen is too small.</div>
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
+    <script
+      src="https://kit.fontawesome.com/0fe7b435ac.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

@@ -1,11 +1,23 @@
-const clock = document.querySelector("h2#clock");
+const clock = document.querySelector("#clock h2");
+const today = document.querySelector("#clock h3");
+
+const DAYS = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+
+function padTwoZero(item) {
+  return String(item).padStart(2, "0");
+}
 
 function getClock() {
   const date = new Date();
-  const hours = String(date.getHours()).padStart(2, "0");
-  const minutes = String(date.getMinutes()).padStart(2, "0");
-  const seconds = String(date.getSeconds()).padStart(2, "0");
+  const years = String(date.getFullYear()).padStart(4, "0");
+  const months = padTwoZero(date.getMonth() + 1);
+  const dates = padTwoZero(date.getDate());
+  const days = date.getDay();
+  const hours = padTwoZero(date.getHours());
+  const minutes = padTwoZero(date.getMinutes());
+  const seconds = padTwoZero(date.getSeconds());
   clock.innerText = `${hours}:${minutes}:${seconds}`;
+  today.innerText = `${years}-${months}-${dates}, ${DAYS[days]}`;
 }
 
 getClock();
