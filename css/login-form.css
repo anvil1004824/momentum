@@ -11,6 +11,7 @@
   color: white;
   display: block;
   border-bottom: 2px solid white;
+  text-shadow: 0px 0px 2px black;
 }
 #login-form input:focus {
   outline: none;
