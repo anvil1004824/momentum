@@ -42,6 +42,7 @@
   text-shadow: 0px 0px 2px black;
 }
 #todo-list button {
+  color: green;
   width: 30px;
   height: 30px;
   display: flex;
