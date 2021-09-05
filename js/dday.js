@@ -40,7 +40,7 @@ function untilDDay() {
     dDayClock.innerText = "";
   } else {
     const CURDAY = new Date();
-    let DDAY = new Date(`${localStorage.getItem("dday-date")}`);
+    let DDAY = new Date(localStorage.getItem("dday-date"));
     let DIFF = DDAY - CURDAY;
     if (DIFF <= 0) {
       localStorage.removeItem("dday-title");
