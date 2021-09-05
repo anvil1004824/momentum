@@ -24,11 +24,27 @@
       <span></span>
     </div>
     <div id="weather">
-      <img />
-      <span></span>
-      <span></span>
-      <div class><i class="fas fa-chevron-down"></i></div>
-      <div class="loading hidden"><i class="fas fa-redo"></i></div>
+      <div class="weather-title">
+        <img />
+        <span></span>
+        <span></span>
+        <div class="detail"><i class="fas fa-chevron-down"></i></div>
+        <div class="loading hidden"><i class="fas fa-redo"></i></div>
+      </div>
+      <div class="weather-detail">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <div class="hide-detail"><i class="fas fa-chevron-up"></i></div>
+      </div>
+    </div>
+    <div class="dday">
+      <form class="dday-input hidden">
+        <input type="date" value="2000-01-01" required />
+        <input type="text" placeholder="Set D-Day and Title" required />
+      </form>
+      <span class="hidden"></span>
     </div>
     <div id="too-small">Your screen is too small.</div>
     <script src="js/greetings.js"></script>
@@ -37,6 +53,7 @@
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/dday.js"></script>
     <script
       src="https://kit.fontawesome.com/0fe7b435ac.js"
       crossorigin="anonymous"
